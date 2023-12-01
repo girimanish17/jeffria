@@ -7,11 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{asset('assets/img/apple-touch-icon.png')}}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{asset('assets/img/favicon-32x32.png')}}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('assets/img/favicon-16x16.png')}}">
-    <link rel="manifest" href="{{asset('assets/img/site.webmanifest')}}">
-    <link rel="mask-icon" href="{{asset('assets/img/safari-pinned-tab.svg')}}" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{url('public/assets/img/apple-touch-icon.png')}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{url('public/assets/img/favicon-32x32.png')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{url('public/assets/img/favicon-16x16.png')}}">
+    <link rel="manifest" href="{{url('public/assets/img/site.webmanifest')}}">
+    <link rel="mask-icon" href="{{url('public/assets/img/safari-pinned-tab.svg')}}" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <meta name="description" content="Clean and minimal Dashboard UI Design Kit">
@@ -32,7 +32,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" media="all" href="{{asset('assets/css/app.min.css')}}">
+    <link rel="stylesheet" media="all" href="{{url('public/assets/css/app.min.css')}}">
     <script>
         var viewportmeta = document.querySelector('meta[name="viewport"]');
         if (viewportmeta) {
