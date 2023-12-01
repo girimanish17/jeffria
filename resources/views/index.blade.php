@@ -1,4 +1,4 @@
-@extends('layout.site')
+@extends('layout.layout')
 
 @section('content')
     <div class="page__inner">
@@ -71,17 +71,17 @@
                                         </div>
                                         <div class="users__list"><a class="users__item" href="message-center.html">
                                                 <div style="width:80px;object-fit:contain;" class="users__avatar"><img
-                                                        style="border-radius:8px !important" src="img/content/uxui.jpg"
+                                                        style="border-radius:8px !important" src="{{asset('assets/img/content/uxui.jpg')}}"
                                                         alt="Avatar"></div>
                                                 <div class="users__title">ifb</div>
                                             </a><a class="users__item" href="message-center.html">
                                                 <div style="width:80px;object-fit:contain;" class="users__avatar"><img
-                                                        style="border-radius:8px !important" src="img/content/frontend.jpg"
+                                                        style="border-radius:8px !important" src="{{asset('assets/img/content/frontend.jpg')}}"
                                                         alt="Avatar"></div>
                                                 <div class="users__title">isc</div>
                                             </a><a class="users__item" href="message-center.html">
                                                 <div style="width:80px;object-fit:contain;" class="users__avatar"><img
-                                                        style="border-radius:8px !important" src="img/content/backend.jpg"
+                                                        style="border-radius:8px !important" src="{{asset('assets/img/content/backend.jpg')}}"
                                                         alt="Avatar"></div>
                                                 <div class="users__title">cvip</div>
                                             </a><a class="users__all" href="customer-list.html">
@@ -219,7 +219,7 @@
                                         <div class="tips__line">
                                             <div class="status-purple tips__status">ifb</div>
                                             <div class="tips__user">
-                                                <div class="tips__avatar"><img src="img/content/avatar.jpg"
+                                                <div class="tips__avatar"><img src="{{asset('assets/img/content/avatar.jpg')}}"
                                                         alt="Avatar"></div>
                                                 <div class="tips__action">2342 visitors</div>
                                             </div>
@@ -238,7 +238,7 @@
                                         <div class="tips__line">
                                             <div class="status-green-dark tips__status">Small label</div>
                                             <div class="tips__user">
-                                                <div class="tips__avatar"><img src="img/content/avatar-3.jpg"
+                                                <div class="tips__avatar"><img src="{{asset('assets/img/content/avatar-3.jpg')}}"
                                                         alt="Avatar"></div>
                                                 <div class="tips__action">Time</div>
                                             </div>
@@ -256,7 +256,7 @@
                                         <div class="tips__title">All time Recruitment</div>
                                         <div class="tips__line">
                                             <div class="tips__user">
-                                                <div class="tips__avatar"><img src="img/content/avatar-1.jpg"
+                                                <div class="tips__avatar"><img src="{{asset('assets/img/content/avatar-1.jpg')}}"
                                                         alt="Avatar"></div>
                                                 <div class="tips__action">2 mins read</div>
                                             </div>
@@ -275,7 +275,7 @@
                                         <div class="tips__line">
                                             <div class="status-red-dark tips__status">Hot</div>
                                             <div class="tips__user">
-                                                <div class="tips__avatar"><img src="img/content/avatar-2.jpg"
+                                                <div class="tips__avatar"><img src="{{asset('assets/img/content/avatar-2.jpg')}}"
                                                         alt="Avatar"></div>
                                                 <div class="tips__action">3 mins read</div>
                                             </div>
@@ -294,7 +294,7 @@
                                         <div class="tips__line">
                                             <div class="status-green-dark tips__status">Popular</div>
                                             <div class="tips__user">
-                                                <div class="tips__avatar"><img src="img/content/avatar.jpg"
+                                                <div class="tips__avatar"><img src="{{asset('assets/img/content/avatar.jpg')}}"
                                                         alt="Avatar"></div>
                                                 <div class="tips__action">Time</div>
                                             </div>
@@ -312,7 +312,7 @@
                                         <div class="tips__title">Best Visitor Conversion</div>
                                         <div class="tips__line">
                                             <div class="tips__user">
-                                                <div class="tips__avatar"><img src="img/content/avatar-2.jpg"
+                                                <div class="tips__avatar"><img src="{{asset('assets/img/content/avatar-2.jpg')}}"
                                                         alt="Avatar"></div>
                                                 <div class="tips__action">3 mins read</div>
                                             </div>
@@ -360,130 +360,130 @@
                             </div>
                             <div class="popular__list">
                                 <a class="popular__item" href="#" data-popup=".js-popup-product">
-                                    <div class="popular__preview"><img srcSet="img/content/uxui.jpg 2x"
-                                            src="img/content/uxui.jpg" alt="Crypter - NFT UI kit" /></div>
+                                    <div class="popular__preview"><img srcSet="{{asset('assets/img/content/uxui.jpg')}} 2x"
+                                            src="{{asset('assets/img/content/uxui.jpg')}}" alt="Crypter - NFT UI kit" /></div>
                                     <div class="popular__title">ifb</div>
                                     <div class="popular__details">
                                         <div class="popular__price">237</div>
                                         <div class="tips__user">
-                                            <div class="tips__avatar"><img src="img/content/avatar-2.jpg" alt="Avatar">
+                                            <div class="tips__avatar"><img src="{{asset('assets/img/content/avatar-2.jpg')}}" alt="Avatar">
                                             </div>
                                             <div class="tips__action">John</div>
                                         </div>
                                     </div>
                                 </a>
                                 <a class="popular__item" href="#" data-popup=".js-popup-product">
-                                    <div class="popular__preview"><img srcSet="img/content/frontend.jpg 2x"
-                                            src="img/content/front-end.jpg" alt="Bento Matte 3D illustration 1.0" /></div>
+                                    <div class="popular__preview"><img srcSet="{{asset('assets/img/content/frontend.jpg')}} 2x"
+                                            src="{{asset('assets/img/content/front-end.jpg')}}" alt="Bento Matte 3D illustration 1.0" /></div>
                                     <div class="popular__title">isc</div>
                                     <div class="popular__details">
                                         <div class="popular__price">105</div>
                                         <div class="tips__user">
-                                            <div class="tips__avatar"><img src="img/content/avatar-2.jpg" alt="Avatar">
+                                            <div class="tips__avatar"><img src="{{asset('assets/img/content/avatar-2.jpg')}}" alt="Avatar">
                                             </div>
                                             <div class="tips__action">John</div>
                                         </div>
                                     </div>
                                 </a>
                                 <a class="popular__item" href="#" data-popup=".js-popup-product">
-                                    <div class="popular__preview"><img srcSet="img/content/backend.jpg 2x"
-                                            src="img/content/backend.jpg" alt="Excellent material 3D chair" /></div>
+                                    <div class="popular__preview"><img srcSet="{{asset('assets/img/content/backend.jpg')}} 2x"
+                                            src="{{asset('assets/img/content/backend.jpg')}}" alt="Excellent material 3D chair" /></div>
                                     <div class="popular__title">ibi</div>
                                     <div class="popular__details">
                                         <div class="popular__price">305</div>
                                         <div class="tips__user">
-                                            <div class="tips__avatar"><img src="img/content/avatar-2.jpg" alt="Avatar">
+                                            <div class="tips__avatar"><img src="{{asset('assets/img/content/avatar-2.jpg')}}" alt="Avatar">
                                             </div>
                                             <div class="tips__action">John</div>
                                         </div>
                                     </div>
                                 </a>
                                 <a class="popular__item" href="#" data-popup=".js-popup-product">
-                                    <div class="popular__preview"><img srcSet="img/content/frontend.jpg 2x"
-                                            src="img/content/frontend.jpg" alt="Fleet - travel shopping kit" /></div>
+                                    <div class="popular__preview"><img srcSet="{{asset('assets/img/content/frontend.jpg')}} 2x"
+                                            src="{{asset('assets/img/content/frontend.jpg')}}" alt="Fleet - travel shopping kit" /></div>
                                     <div class="popular__title">wcn</div>
                                     <div class="popular__details">
                                         <div class="popular__price">410</div>
                                         <div class="tips__user">
-                                            <div class="tips__avatar"><img src="img/content/avatar-2.jpg" alt="Avatar">
+                                            <div class="tips__avatar"><img src="{{asset('assets/img/content/avatar-2.jpg')}}" alt="Avatar">
                                             </div>
                                             <div class="tips__action">John</div>
                                         </div>
                                     </div>
                                 </a>
                                 <a class="popular__item" href="#" data-popup=".js-popup-product">
-                                    <div class="popular__preview"><img srcSet="img/content/uxui.jpg 2x"
-                                            src="img/content/uxui.jpg" alt="Crypter - NFT UI kit" /></div>
+                                    <div class="popular__preview"><img srcSet="{{asset('assets/img/content/uxui.jpg')}} 2x"
+                                            src="{{asset('assets/img/content/uxui.jpg')}}" alt="Crypter - NFT UI kit" /></div>
                                     <div class="popular__title">cvip</div>
                                     <div class="popular__details">
                                         <div class="popular__price">237</div>
                                         <div class="tips__user">
-                                            <div class="tips__avatar"><img src="img/content/avatar-2.jpg" alt="Avatar">
+                                            <div class="tips__avatar"><img src="{{asset('assets/img/content/avatar-2.jpg')}}" alt="Avatar">
                                             </div>
                                             <div class="tips__action">John</div>
                                         </div>
                                     </div>
                                 </a>
                                 <a class="popular__item" href="#" data-popup=".js-popup-product">
-                                    <div class="popular__preview"><img srcSet="img/content/frontend.jpg 2x"
-                                            src="img/content/front-end.jpg" alt="Bento Matte 3D illustration 1.0" /></div>
+                                    <div class="popular__preview"><img srcSet="{{asset('assets/img/content/frontend.jpg')}} 2x"
+                                            src="{{asset('assets/img/content/front-end.jpg')}}" alt="Bento Matte 3D illustration 1.0" /></div>
                                     <div class="popular__title">i2c</div>
                                     <div class="popular__details">
                                         <div class="popular__price">105</div>
                                         <div class="tips__user">
-                                            <div class="tips__avatar"><img src="img/content/avatar-2.jpg" alt="Avatar">
+                                            <div class="tips__avatar"><img src="{{asset('assets/img/content/avatar-2.jpg')}}" alt="Avatar">
                                             </div>
                                             <div class="tips__action">John</div>
                                         </div>
                                     </div>
                                 </a>
                                 <a class="popular__item" href="#" data-popup=".js-popup-product">
-                                    <div class="popular__preview"><img srcSet="img/content/backend.jpg 2x"
-                                            src="img/content/backend.jpg" alt="Excellent material 3D chair" /></div>
+                                    <div class="popular__preview"><img srcSet="{{asset('assets/img/content/backend.jpg')}} 2x"
+                                            src="{{asset('assets/img/content/backend.jpg')}}" alt="Excellent material 3D chair" /></div>
                                     <div class="popular__title">rb</div>
                                     <div class="popular__details">
                                         <div class="popular__price">305</div>
                                         <div class="tips__user">
-                                            <div class="tips__avatar"><img src="img/content/avatar-2.jpg" alt="Avatar">
+                                            <div class="tips__avatar"><img src="{{asset('assets/img/content/avatar-2.jpg')}}" alt="Avatar">
                                             </div>
                                             <div class="tips__action">John</div>
                                         </div>
                                     </div>
                                 </a>
                                 <a class="popular__item" href="#" data-popup=".js-popup-product">
-                                    <div class="popular__preview"><img srcSet="img/content/frontend.jpg 2x"
-                                            src="img/content/front-end.jpg" alt="Bento Matte 3D illustration 1.0" /></div>
+                                    <div class="popular__preview"><img srcSet="{{asset('assets/img/content/frontend.jpg')}} 2x"
+                                            src="{{asset('assets/img/content/front-end.jpg')}}" alt="Bento Matte 3D illustration 1.0" /></div>
                                     <div class="popular__title">isc</div>
                                     <div class="popular__details">
                                         <div class="popular__price">105</div>
                                         <div class="tips__user">
-                                            <div class="tips__avatar"><img src="img/content/avatar-2.jpg" alt="Avatar">
+                                            <div class="tips__avatar"><img src="{{asset('assets/img/content/avatar-2.jpg')}}" alt="Avatar">
                                             </div>
                                             <div class="tips__action">John</div>
                                         </div>
                                     </div>
                                 </a>
                                 <a class="popular__item" href="#" data-popup=".js-popup-product">
-                                    <div class="popular__preview"><img srcSet="img/content/backend.jpg 2x"
-                                            src="img/content/backend.jpg" alt="Excellent material 3D chair" /></div>
+                                    <div class="popular__preview"><img srcSet="{{asset('assets/img/content/backend.jpg')}} 2x"
+                                            src="{{asset('assets/img/content/backend.jpg')}}" alt="Excellent material 3D chair" /></div>
                                     <div class="popular__title">ibi</div>
                                     <div class="popular__details">
                                         <div class="popular__price">305</div>
                                         <div class="tips__user">
-                                            <div class="tips__avatar"><img src="img/content/avatar-2.jpg" alt="Avatar">
+                                            <div class="tips__avatar"><img src="{{asset('assets/img/content/avatar-2.jpg')}}" alt="Avatar">
                                             </div>
                                             <div class="tips__action">John</div>
                                         </div>
                                     </div>
                                 </a>
                                 <a class="popular__item" href="#" data-popup=".js-popup-product">
-                                    <div class="popular__preview"><img srcSet="img/content/frontend.jpg 2x"
-                                            src="img/content/frontend.jpg" alt="Fleet - travel shopping kit" /></div>
+                                    <div class="popular__preview"><img srcSet="{{asset('assets/img/content/frontend.jpg')}} 2x"
+                                            src="{{asset('assets/img/content/frontend.jpg')}}" alt="Fleet - travel shopping kit" /></div>
                                     <div class="popular__title">wcn</div>
                                     <div class="popular__details">
                                         <div class="popular__price">410</div>
                                         <div class="tips__user">
-                                            <div class="tips__avatar"><img src="img/content/avatar-2.jpg" alt="Avatar">
+                                            <div class="tips__avatar"><img src="{{asset('assets/img/content/avatar-2.jpg')}}" alt="Avatar">
                                             </div>
                                             <div class="tips__action">John</div>
                                         </div>
@@ -500,7 +500,7 @@
                 <div class="review">
                   <div class="review__list">
                     <div class="review__item">
-                      <div class="review__avatar"><img src="img/content/avatar.jpg" alt="Avatar"></div>
+                      <div class="review__avatar"><img src="{{asset('assets/img/content/avatar.jpg')}}" alt="Avatar"></div>
                       <div class="review__details">
                         <div class="review__line">
                           <div class="review__user"><span class="review__title">Ethel</span><span class="review__login">@ethel</span></div>
@@ -527,7 +527,7 @@
                       </div>
                     </div>
                     <div class="review__item">
-                      <div class="review__avatar"><img src="img/content/avatar-1.jpg" alt="Avatar"></div>
+                      <div class="review__avatar"><img src="{{asset('assets/img/content/avatar-1.jpg')}}" alt="Avatar"></div>
                       <div class="review__details">
                         <div class="review__line">
                           <div class="review__user"><span class="review__title">Jazmyn</span><span class="review__login">@jaz.designer</span></div>
@@ -554,7 +554,7 @@
                       </div>
                     </div>
                     <div class="review__item">
-                      <div class="review__avatar"><img src="img/content/avatar-2.jpg" alt="Avatar"></div>
+                      <div class="review__avatar"><img src="{{asset('assets/img/content/avatar-2.jpg')}}" alt="Avatar"></div>
                       <div class="review__details">
                         <div class="review__line">
                           <div class="review__user"><span class="review__title">Ethel</span><span class="review__login">@ethel</span></div>
