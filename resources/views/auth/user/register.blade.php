@@ -58,6 +58,9 @@
 <body>
 
     <div class="page page_simple">
+        {{-- <div class="alert alert-danger email-print-error-msg" style="display:none;font-size: 16px;">
+            <span></span>
+        </div> --}}
         <div class="login">
           <div class="login__col">
             <div class="login__wrap">
@@ -75,6 +78,7 @@
             <div class="login__head"><a class="login__logo" href="{{url('/')}}"><img class="some-icon" src="{{asset('assets/img/logo-dark.png')}}" alt="Core"><img class="some-icon-dark" src="{{asset('assets/img/logo-light.png')}}" alt="Core"></a>
               <div class="login__info">Already a member? <a href="{{route('sign_in')}}">Sign in</a></div>
             </div>
+
             <div class="login__wrapper">
               <div style="text-align: center;" class="h2 login__title">Sign up</div>
               <div class="login__entry">
@@ -86,10 +90,13 @@
                   </div>
                 </div>
                 <div class="login__text">Or continue with email address</div>
+                <div class="email-print-error-msg login__error"><span></span></div>
+                <form action="{{ route('registration')}}" method="POST">
+                @csrf
                 <div class="login__fieldset">
                   <div class="field field_icon">
                     <div class="field__wrap">
-                      <input class="field__input" type="emial" name="email" placeholder="Your email">
+                      <input class="field__input" type="emial" name="email" id="email" placeholder="Your email">
                       <div class="field__icon">
                         <svg class="icon icon-mail">
                           <use xlink:href="#icon-mail"></use>
@@ -97,7 +104,7 @@
                       </div>
                     </div>
                   </div>
-                  <button class="button login__button">Continue</button>
+                  <button class="button login__button" type="button" id="register">Continue</button>
                   <div class="login__note">This site is protected by reCAPTCHA and the Google Privacy Policy.</div>
                 </div>
               </div>
@@ -105,28 +112,30 @@
                 <div class="login__text">We just send you a verify code. Check your inbox to get them.</div>
                 <div class="login__row">
                   <div class="login__field">
-                    <input class="error" type="tel" name="code1" autocomplete="off">
+                    <input class="error" type="tel" name="code1" id="code1" autocomplete="off" maxlength="1" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')">
                   </div>
                   <div class="login__field">
-                    <input type="tel" name="code2" autocomplete="off">
+                    <input type="tel" name="code2" id="code2" autocomplete="off" maxlength="1" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')">
                   </div>
                   <div class="login__field">
-                    <input type="tel" name="code3" autocomplete="off">
+                    <input type="tel" name="code3" id="code3" autocomplete="off" maxlength="1" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')">
                   </div>
                   <div class="login__field">
-                    <input type="tel" name="code4" autocomplete="off">
+                    <input type="tel" name="code4" id="code4" autocomplete="off" maxlength="1" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')">
                   </div>
                 </div>
-                <div class="login__error">The code you entered is incorrect.</div><a class="button login__button" href="index.html#header">
-                  <div class="loader"></div><span>Continue</span></a>
+                <div class="otp-print-error-msg login__error"><span></span></div>
+                <input type="button" class="button login__button" id="submit" value="Continue">
+                <input type="submit" style="display:none;" id="lastsubmitbtn" name="next" class="next action-button brad" value="Submit">
                 <div class="login__note">This site is protected by reCAPTCHA and the Google Privacy Policy.</div>
               </div>
             </div>
+           </form>
           </div>
         </div>
       </div>
 
-        <!-- scripts-->
+    <!-- scripts-->
      <script src="{{asset('assets/js/lib/jquery.min.js')}}"></script>
      <script src="{{asset('assets/js/lib/slick.min.js')}}"></script>
      <script src="{{asset('assets/js/lib/jquery.nice-select.min.js')}}"></script>
@@ -142,6 +151,7 @@
      <script src="{{asset('assets/js/charts.js')}}"></script>
      <script src="{{asset('assets/js/demo.js')}}"></script>
      <script src="{{asset('assets/js/app.js')}}"></script>
+     <script src="{{asset('assets/js/common.js')}}"></script>
      <!-- svg sprite-->
      <div style="display: none"><svg width="0" height="0">
              <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="icon-sun">
