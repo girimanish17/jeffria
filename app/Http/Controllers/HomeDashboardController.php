@@ -70,5 +70,60 @@ class HomeDashboardController extends Controller
         ]);
     }
 
+    // Expenses
+    public function expenses_overview() {
+        return view(self::BASE_PATH .'expenses.overview')->with([
+            'page_title' => "JeffRia - Expenses | Overview",
+        ]);
+    }
+
+    public function expenses_hosting_server() {
+        return view(self::BASE_PATH .'expenses.hosting-server')->with([
+            'page_title' => "JeffRia - Expenses | Hosting Server",
+        ]);
+    }
+
+    public function expenses_api() {
+        return view(self::BASE_PATH .'expenses.api')->with([
+            'page_title' => "JeffRia - Expenses | API",
+        ]);
+    }
+
+    public function expenses_ads_pay() {
+        return view(self::BASE_PATH .'expenses.ads-pay')->with([
+            'page_title' => "JeffRia - Expenses | Ads Pay",
+        ]);
+    }
+
+    public function expenses_theme() {
+        return view(self::BASE_PATH .'expenses.theme')->with([
+            'page_title' => "JeffRia - Expenses | Theme",
+        ]);
+    }
+
+    public function expenses_plugin() {
+        return view(self::BASE_PATH .'expenses.plugin')->with([
+            'page_title' => "JeffRia - Expenses | Plugin",
+        ]);
+    }
+
+    public function expenses_software() {
+        return view(self::BASE_PATH .'expenses.software')->with([
+            'page_title' => "JeffRia - Expenses | Software",
+        ]);
+    }
+
+    public function summary() {
+        return view(self::BASE_PATH .'summary.summary')->with([
+            'page_title' => "JeffRia - Summary",
+        ]);
+    }
+
+    // Help
+    public function help_upgrade_to_pro() {
+        return view(self::BASE_PATH .'help.upgrade-to-pro')->with([
+            'page_title' => "JeffRia - Help | Upgrade To Pro",
+        ]);
+    }
     
 }

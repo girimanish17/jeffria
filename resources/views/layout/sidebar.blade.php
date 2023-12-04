@@ -4,13 +4,13 @@
             <use xlink:href="#icon-close"></use>
         </svg>
     </button><a class="sidebar__logo" href="{{ url('/') }}"><img class="some-icon"
-            src="{{ url('public/assets/img/logo-dark.png') }}" alt="Core"><img class="some-icon-dark"
-            src="{{ url('public/assets/img/logo-light.png') }}" alt="Core"></a>
+            src="{{ asset('assets/img/logo-dark.png') }}" alt="Core"><img class="some-icon-dark"
+            src="{{ asset('assets/img/logo-light.png') }}" alt="Core"></a>
     <div class="sidebar__menu"><a class="sidebar__item active" href="{{ url('/') }}">
             <svg class="icon icon-home">
                 <use xlink:href="#icon-home"></use>
             </svg>Home</a>
-        <div class="sidebar__item sidebar__item_dropdown wide">
+        <div class="sidebar__item sidebar__item_dropdown wide {{ (Request::segment(1)=='projects' ) ? 'active' : '' }}">
             <div class="sidebar__top">
                 <button class="sidebar__head">
                     <svg class="icon icon-diamond">
@@ -24,22 +24,22 @@
                         <use xlink:href="#icon-plus"></use>
                     </svg></a>
             </div>
-            <div class="sidebar__body"><a class="sidebar__link" href="{{route('traffic_report')}}">Traffic Report
+            <div class="sidebar__body"><a class="sidebar__link {{ (Request::segment(2)=='traffic-report' ) ? 'active' : '' }}" href="{{route('traffic_report')}}">Traffic Report
                     <svg class="icon icon-arrow-next">
                         <use xlink:href="#icon-arrow-next"></use>
-                    </svg></a><a class="sidebar__link" href="{{route('under_development')}}">Under Development
+                    </svg></a><a class="sidebar__link {{ (Request::segment(2)=='under-development' ) ? 'active' : '' }}" href="{{route('under_development')}}">Under Development
                     <svg class="icon icon-arrow-next">
                         <use xlink:href="#icon-arrow-next"></use>
                     </svg>
                     <div class="sidebar__counter" style="background-color: #FFBC99">5</div>
-                </a><a class="sidebar__link" href="{{route('launched_products')}}">Launched
+                </a><a class="sidebar__link {{ (Request::segment(2)=='launched-products' ) ? 'active' : '' }}" href="{{route('launched_products')}}">Launched
                     <svg class="icon icon-arrow-next">
                         <use xlink:href="#icon-arrow-next"></use>
                     </svg>
                     <div class="sidebar__counter" style="background-color: #B5E4CA">10</div>
                 </a></div>
         </div>
-        <div class="sidebar__item sidebar__item_dropdown wide">
+        <div class="sidebar__item sidebar__item_dropdown wide  {{ (Request::segment(1)=='staffs' ) ? 'active' : '' }}">
             <button class="sidebar__head">
                 <svg class="icon icon-profile-circle">
                     <use xlink:href="#icon-profile-circle"></use>
@@ -48,18 +48,18 @@
                     <use xlink:href="#icon-arrow-down"></use>
                 </svg>
             </button>
-            <div class="sidebar__body"><a class="sidebar__link" href="{{route('overview')}}">Overview
+            <div class="sidebar__body"><a class="sidebar__link {{(Request::segment(1)=='staffs' ) && (Request::segment(2)=='overview' ) ? 'active' : '' }}" href="{{route('overview')}}">Overview
                     <svg class="icon icon-arrow-next">
                         <use xlink:href="#icon-arrow-next"></use>
-                    </svg></a><a class="sidebar__link" href="{{route('staffs_list')}}">Staffs list
-                    <svg class="icon icon-arrow-next">
-                        <use xlink:href="#icon-arrow-next"></use>
-                    </svg></a>
-                <a class="sidebar__link" href="{{route('affiliate_traffic')}}">Affiliate Traffic
+                    </svg></a><a class="sidebar__link {{ (Request::segment(2)=='staffs-list' ) ? 'active' : '' }}" href="{{route('staffs_list')}}">Staffs list
                     <svg class="icon icon-arrow-next">
                         <use xlink:href="#icon-arrow-next"></use>
                     </svg></a>
-                <a class="sidebar__link" href="{{route('salary_claim_status')}}">Salary claim status
+                <a class="sidebar__link {{ (Request::segment(2)=='affiliate-traffic' ) ? 'active' : '' }}" href="{{route('affiliate_traffic')}}">Affiliate Traffic
+                    <svg class="icon icon-arrow-next">
+                        <use xlink:href="#icon-arrow-next"></use>
+                    </svg></a>
+                <a class="sidebar__link {{ (Request::segment(2)=='salary-claim-status' ) ? 'active' : '' }}" href="{{route('salary_claim_status')}}">Salary claim status
                     <svg class="icon icon-arrow-next">
                         <use xlink:href="#icon-arrow-next"></use>
                     </svg></a>
@@ -69,7 +69,7 @@
     <svg class="icon icon-store">
       <use xlink:href="#icon-store"></use>
     </svg>Shop</a> -->
-        <div class="sidebar__item sidebar__item_dropdown wide">
+        <div class="sidebar__item sidebar__item_dropdown wide {{ (Request::segment(1)=='expenses' ) ? 'active' : '' }}">
             <button class="sidebar__head">
                 <svg class="icon icon-pie-chart">
                     <use xlink:href="#icon-pie-chart"></use>
@@ -79,35 +79,35 @@
                 </svg>
             </button>
             <div class="sidebar__body">
-                <a class="sidebar__link" href="income-earning.html">Overview
+                <a class="sidebar__link {{(Request::segment(1)=='expenses' ) && (Request::segment(2)=='overview' ) ? 'active' : '' }}" href="{{route('expenses_overview')}}">Overview
                     <svg class="icon icon-arrow-next">
                         <use xlink:href="#icon-arrow-next"></use>
-                    </svg></a><a class="sidebar__link" href="hosting-server.html">Hosting Server
-                    <svg class="icon icon-arrow-next">
-                        <use xlink:href="#icon-arrow-next"></use>
-                    </svg></a>
-                <a class="sidebar__link" href="api.html">Api
+                    </svg></a><a class="sidebar__link {{ (Request::segment(2)=='hosting-server' ) ? 'active' : '' }}"" href="{{route('expenses_hosting_server')}}">Hosting Server
                     <svg class="icon icon-arrow-next">
                         <use xlink:href="#icon-arrow-next"></use>
                     </svg></a>
-                <a class="sidebar__link" href="ads-pay.html">Ads Pay
+                <a class="sidebar__link {{ (Request::segment(2)=='api' ) ? 'active' : '' }}" href="{{route('expenses_api')}}">Api
                     <svg class="icon icon-arrow-next">
                         <use xlink:href="#icon-arrow-next"></use>
                     </svg></a>
-                <a class="sidebar__link" href="theme.html">Theme
+                <a class="sidebar__link {{ (Request::segment(2)=='ads-pay' ) ? 'active' : '' }}" href="{{route('expenses_ads_pay')}}" href="{{route('expenses_ads_pay')}}">Ads Pay
                     <svg class="icon icon-arrow-next">
                         <use xlink:href="#icon-arrow-next"></use>
                     </svg></a>
-                <a class="sidebar__link" href="plugin.html">Plugin
+                <a class="sidebar__link {{ (Request::segment(2)=='theme' ) ? 'active' : '' }}" href="{{route('expenses_theme')}}" href="{{route('expenses_theme')}}">Theme
                     <svg class="icon icon-arrow-next">
                         <use xlink:href="#icon-arrow-next"></use>
                     </svg></a>
-                <a class="sidebar__link" href="software.html">Software
+                <a class="sidebar__link {{ (Request::segment(2)=='plugin' ) ? 'active' : '' }}" href="{{route('expenses_plugin')}}" href="{{route('expenses_plugin')}}">Plugin
+                    <svg class="icon icon-arrow-next">
+                        <use xlink:href="#icon-arrow-next"></use>
+                    </svg></a>
+                <a class="sidebar__link {{ (Request::segment(2)=='software' ) ? 'active' : '' }}" href="{{route('expenses_software')}}" href="{{route('expenses_software')}}">Software
                     <svg class="icon icon-arrow-next">
                         <use xlink:href="#icon-arrow-next"></use>
                     </svg></a>
             </div>
-        </div><a class="sidebar__item" href="promote.html">
+        </div><a class="sidebar__item" href="{{route('summary')}}">
             <svg class="icon icon-promotion">
                 <use xlink:href="#icon-promotion"></use>
             </svg>Summary</a>

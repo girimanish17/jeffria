@@ -83,7 +83,7 @@
             </div>
         </a>
     </div>
-    <div class="help__menu"><a class="help__link" href="upgrade-to-pro.html">
+    <div class="help__menu"><a class="help__link" href="{{route('help_upgrade_to_pro')}}">
             <svg class="icon icon-lightning">
                 <use xlink:href="#icon-lightning"></use>
             </svg>Upgrade to Pro
@@ -92,10 +92,10 @@
                     <use xlink:href="#icon-arrow-next"></use>
                 </svg>
             </div>
-        </a><a class="help__link" href="index.html">
+        </a><a class="help__link" href="{{url('/')}}">
             <svg class="icon icon-download">
                 <use xlink:href="#icon-download"></use>
-            </svg>Download desktop app</a><a class="help__link" href="message-center.html">
+            </svg>Download desktop app</a><a class="help__link" href="{{route('message_center')}}">
             <svg class="icon icon-message">
                 <use xlink:href="#icon-message"></use>
             </svg>Message center

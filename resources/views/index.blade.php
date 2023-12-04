@@ -4,6 +4,9 @@
     <div class="page__inner">
         <div class="page__container">
             <div class="page__title h3">Dashboard</div>
+            @if(session('success'))
+                <h3 style="color: mediumseagreen;">{{session('success')}}</h3>
+            @endif
             <div class="page__row">
                 <div class="page__col">
                     <div class="card">

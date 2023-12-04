@@ -1023,21 +1023,21 @@
 </div>
 </div>
 <!-- scripts-->
-<script src="{{url('public/assets/js/lib/jquery.min.js') }}"></script>
-<script src="{{url('public/assets/js/lib/slick.min.js') }}"></script>
-<script src="{{url('public/assets/js/lib/jquery.nice-select.min.js') }}"></script>
-<script src="{{url('public/assets/js/lib/tooltipster.bundle.min.js') }}"></script>
-<script src="{{url('public/assets/js/lib/apexcharts.min.js') }}"></script>
-<script src="{{url('public/assets/js/lib/jquery.richtext.min.js') }}"></script>
-<script src="{{url('public/assets/js/lib/jquery.fancybox.min.js') }}"></script>
-<script src="{{url('public/assets/js/lib/jQuery.tagify.min.js') }}"></script>
-<script src="{{url('public/assets/js/lib/moment.min.js') }}"></script>
-<script src="{{url('public/assets/js/lib/jquery.daterangepicker.min.js') }}"></script>
-<script src="{{url('public/assets/js/lib/nouislider.min.js') }}"></script>
-<script src="{{url('public/assets/js/lib/wNumb.js') }}"></script>
-<script src="{{url('public/assets/js/charts.js') }}"></script>
-<script src="{{url('public/assets/js/demo.js') }}"></script>
-<script src="{{url('public/assets/js/app.js') }}"></script>
+<script src="{{asset('assets/js/lib/jquery.min.js') }}"></script>
+<script src="{{asset('assets/js/lib/slick.min.js') }}"></script>
+<script src="{{asset('assets/js/lib/jquery.nice-select.min.js') }}"></script>
+<script src="{{asset('public/assets/js/lib/tooltipster.bundle.min.js') }}"></script>
+<script src="{{asset('assets/js/lib/apexcharts.min.js') }}"></script>
+<script src="{{asset('assets/js/lib/jquery.richtext.min.js') }}"></script>
+<script src="{{asset('assets/js/lib/jquery.fancybox.min.js') }}"></script>
+<script src="{{asset('assets/js/lib/jQuery.tagify.min.js') }}"></script>
+<script src="{{asset('assets/js/lib/moment.min.js') }}"></script>
+<script src="{{asset('assets/js/lib/jquery.daterangepicker.min.js') }}"></script>
+<script src="{{asset('assets/js/lib/nouislider.min.js') }}"></script>
+<script src="{{asset('assets/js/lib/wNumb.js') }}"></script>
+<script src="{{url('assets/js/charts.js') }}"></script>
+<script src="{{asset('assets/js/demo.js') }}"></script>
+<script src="{{asset('assets/js/app.js') }}"></script>
 <!-- svg sprite-->
 <div style="display: none"><svg width="0" height="0">
         <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="icon-sun">
