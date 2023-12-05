@@ -6,7 +6,7 @@
     </button><a class="sidebar__logo" href="{{ url('/') }}"><img class="some-icon"
             src="{{ asset('assets/img/logo-dark.png') }}" alt="Core"><img class="some-icon-dark"
             src="{{ asset('assets/img/logo-light.png') }}" alt="Core"></a>
-    <div class="sidebar__menu"><a class="sidebar__item active" href="{{ url('/') }}">
+    <div class="sidebar__menu"><a class="sidebar__item {{ (Request::segment(1)=='' ) ? 'active' : '' }}" href="{{ url('/') }}">
             <svg class="icon icon-home">
                 <use xlink:href="#icon-home"></use>
             </svg>Home</a>

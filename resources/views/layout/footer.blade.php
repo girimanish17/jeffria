@@ -34,7 +34,7 @@
                         <div class="product__info">Elegant product mockup for your next project</div>
                         <div class="product__line">
                             <div class="product__author">
-                                <div class="product__avatar"><img src="{{url('public/assetsimg/content/avatar.jpg') }}"
+                                <div class="product__avatar"><img src="{{asset('assets/img/content/avatar.jpg') }}"
                                         alt="Avatar"></div>by <span>Chelsie Haley</span>
                             </div>
                             <div class="product__rating">
@@ -45,18 +45,18 @@
                         </div>
                         <div class="product__gallery">
                             <div class="product__box"><a class="product__preview"
-                                    href="{{url('public/assetsimg/content/photo-1.jpg') }}" data-fancybox="gallery"
+                                    href="{{asset('assets/img/content/photo-1.jpg') }}" data-fancybox="gallery"
                                     data-caption="Spectacular views of Queenstown"><img
-                                        src="{{url('public/assetsimg/content/photo-1.jpg') }}" alt="Product"></a><a
+                                        src="{{asset('assets/img/content/photo-1.jpg') }}" alt="Product"></a><a
                                     class="product__preview" href="{{url('public/assetsimg/content/photo-2.jpg') }}"
                                     data-fancybox="gallery" data-caption="Spectacular views of Queenstown"><img
-                                        src="{{url('public/assetsimg/content/photo-2.jpg') }}" alt="Product"></a><a
+                                        src="{{asset('assets/img/content/photo-2.jpg') }}" alt="Product"></a><a
                                     class="product__preview" href="{{url('public/assetsimg/content/photo-1.jpg') }}"
                                     data-fancybox="gallery" data-caption="Spectacular views of Queenstown"><img
-                                        src="{{url('public/assetsimg/content/photo-1.jpg') }}" alt="Product"></a><a
+                                        src="{{asset('assets/img/content/photo-1.jpg') }}" alt="Product"></a><a
                                     class="product__preview" href="{{url('public/assetsimg/content/photo-2.jpg') }}"
                                     data-fancybox="gallery" data-caption="Spectacular views of Queenstown"><img
-                                        src="{{url('public/assetsimg/content/photo-2.jpg') }}" alt="Product"></a></div><a
+                                        src="{{asset('assets/img/content/photo-2.jpg') }}" alt="Product"></a></div><a
                                 class="button-white product__button" href="#">Show all preview</a>
                         </div>
                         <div class="product__row">
@@ -98,8 +98,8 @@
                             <div class="hit__slider js-slider-hit">
                                 <div class="summary">
                                     <div class="summary__preview"><img
-                                            srcSet="{{url('public/assetsimg/content/product-pic-1@2x.jpg') }} 2x"
-                                            src="{{url('public/assetsimg/content/product-pic-1.jpg') }}" alt="Product" />
+                                            srcSet="{{asset('assets/img/content/product-pic-1@2x.jpg') }} 2x"
+                                            src="{{asset('assets/img/content/product-pic-1.jpg') }}" alt="Product" />
                                         <div class="summary__control">
                                             <button class="summary__button">
                                                 <svg class="icon icon-edit">
@@ -133,8 +133,8 @@
                                 </div>
                                 <div class="summary">
                                     <div class="summary__preview"><img
-                                            srcSet="{{url('public/assetsimg/content/product-pic-2@2x.jpg') }} 2x"
-                                            src="{{url('public/assetsimg/content/product-pic-2.jpg') }}"
+                                            srcSet="{{asset('assets/img/content/product-pic-2@2x.jpg') }} 2x"
+                                            src="{{asset('assets/img/content/product-pic-2.jpg') }}"
                                             alt="Product" />
                                         <div class="summary__control">
                                             <button class="summary__button">
@@ -169,8 +169,8 @@
                                 </div>
                                 <div class="summary">
                                     <div class="summary__preview"><img
-                                            srcSet="{{url('public/assetsimg/content/product-pic-3@2x.jpg') }} 2x"
-                                            src="{{url('public/assetsimg/content/product-pic-3.jpg') }}"
+                                            srcSet="{{asset('assets/img/content/product-pic-3@2x.jpg') }} 2x"
+                                            src="{{asset('assets/img/content/product-pic-3.jpg') }}"
                                             alt="Product" />
                                         <div class="summary__control">
                                             <button class="summary__button">
@@ -203,8 +203,8 @@
                                 </div>
                                 <div class="summary">
                                     <div class="summary__preview"><img
-                                            srcSet="{{url('public/assetsimg/content/product-pic-1@2x.jpg') }} 2x"
-                                            src="{{url('public/assetsimg/content/product-pic-1.jpg') }}"
+                                            srcSet="{{asset('assets/img/content/product-pic-1@2x.jpg') }} 2x"
+                                            src="{{asset('assets/img/content/product-pic-1.jpg') }}"
                                             alt="Product" />
                                         <div class="summary__control">
                                             <button class="summary__button">
@@ -239,8 +239,8 @@
                                 </div>
                                 <div class="summary">
                                     <div class="summary__preview"><img
-                                            srcSet="{{url('public/assetsimg/content/product-pic-2@2x.jpg') }} 2x"
-                                            src="{{url('public/assetsimg/content/product-pic-2.jpg') }}"
+                                            srcSet="{{asset('assets/img/content/product-pic-2@2x.jpg') }} 2x"
+                                            src="{{asset('assets/img/content/product-pic-2.jpg') }}"
                                             alt="Product" />
                                         <div class="summary__control">
                                             <button class="summary__button">
@@ -275,8 +275,8 @@
                                 </div>
                                 <div class="summary">
                                     <div class="summary__preview"><img
-                                            srcSet="{{url('public/assetsimg/content/product-pic-3@2x.jpg ') }}2x"
-                                            src="{{url('public/assetsimg/content/product-pic-3.jpg') }}"
+                                            srcSet="{{asset('assets/img/content/product-pic-3@2x.jpg ') }}2x"
+                                            src="{{asset('assets/img/content/product-pic-3.jpg') }}"
                                             alt="Product" />
                                         <div class="summary__control">
                                             <button class="summary__button">
@@ -337,7 +337,7 @@
                     </div>
                     <div class="comments__list">
                         <div class="comments__item">
-                            <div class="comments__avatar"><img src="{{url('public/assetsimg/content/avatar-1.jpg') }}"
+                            <div class="comments__avatar"><img src="{{asset('assets/img/content/avatar-1.jpg') }}"
                                     alt="Avatar">
                             </div>
                             <div class="comments__details">
@@ -371,7 +371,7 @@
                                 </div>
                                 <div class="answer">
                                     <div class="answer__avatar"><img
-                                            src="{{url('public/assetsimg/content/avatar.jpg') }}" alt="Avatar" />
+                                            src="{{asset('assets/img/content/avatar.jpg') }}" alt="Avatar" />
                                     </div>
                                     <div class="answer__details">
                                         <div class="answer__message">
@@ -388,7 +388,7 @@
                             </div>
                         </div>
                         <div class="comments__answer">
-                            <div class="comments__avatar"><img src="{{url('public/assetsimg/content/avatar.jpg') }}"
+                            <div class="comments__avatar"><img src="{{asset('assets/img/content/avatar.jpg') }}"
                                     alt="Avatar">
                             </div>
                             <div class="comments__details">
@@ -420,7 +420,7 @@
                                 </div>
                                 <div class="answer">
                                     <div class="answer__avatar"><img
-                                            src="{{url('public/assetsimg/content/avatar.jpg') }}" alt="Avatar" />
+                                            src="{{asset('assets/img/content/avatar.jpg') }}" alt="Avatar" />
                                     </div>
                                     <div class="answer__details">
                                         <div class="answer__message">
@@ -437,7 +437,7 @@
                             </div>
                         </div>
                         <div class="comments__item">
-                            <div class="comments__avatar"><img src="{{url('public/assetsimg/content/avatar-2.jpg') }}"
+                            <div class="comments__avatar"><img src="{{asset('assets/img/content/avatar-2.jpg') }}"
                                     alt="Avatar">
                             </div>
                             <div class="comments__details">
@@ -469,7 +469,7 @@
                                 </div>
                                 <div class="answer">
                                     <div class="answer__avatar"><img
-                                            src="{{url('public/assetsimg/content/avatar.jpg') }}" alt="Avatar" />
+                                            src="{{asset('assets/img/content/avatar.jpg') }}" alt="Avatar" />
                                     </div>
                                     <div class="answer__details">
                                         <div class="answer__message">
@@ -486,7 +486,7 @@
                             </div>
                         </div>
                         <div class="comments__item">
-                            <div class="comments__avatar"><img src="{{url('public/assetsimg/content/avatar-4.jpg') }}"
+                            <div class="comments__avatar"><img src="{{asset('assets/img/content/avatar-4.jpg') }}"
                                     alt="Avatar">
                             </div>
                             <div class="comments__details">
@@ -520,7 +520,7 @@
                                 </div>
                                 <div class="answer">
                                     <div class="answer__avatar"><img
-                                            src="{{url('public/assetsimg/content/avatar.jpg') }}" alt="Avatar" />
+                                            src="{{asset('assets/img/content/avatar.jpg') }}" alt="Avatar" />
                                     </div>
                                     <div class="answer__details">
                                         <div class="answer__message">
@@ -537,7 +537,7 @@
                             </div>
                         </div>
                         <div class="comments__item">
-                            <div class="comments__avatar"><img src="{{url('public/assetsimg/content/avatar-3.jpg') }}"
+                            <div class="comments__avatar"><img src="{{asset('assets/img/content/avatar-3.jpg') }}"
                                     alt="Avatar">
                             </div>
                             <div class="comments__details">
@@ -571,7 +571,7 @@
                                 </div>
                                 <div class="answer">
                                     <div class="answer__avatar"><img
-                                            src="{{url('public/assetsimg/content/avatar.jpg') }}" alt="Avatar" />
+                                            src="{{asset('assets/img/content/avatar.jpg') }}" alt="Avatar" />
                                     </div>
                                     <div class="answer__details">
                                         <div class="answer__message">
@@ -590,9 +590,9 @@
                     </div>
                 </div>
                 <div class="product__panel">
-                    <div class="product__avatar"><img src="{{url('public/assetsimg/content/avatar.jpg') }}"
+                    <div class="product__avatar"><img src="{{asset('assets/img/content/avatar.jpg') }}"
                             alt="Avatar"></div>
-                    <div class="product__brand"><img src="{{url('public/assetsimg/content/figma.png') }}"
+                    <div class="product__brand"><img src="{{asset('assets/img/content/figma.png') }}"
                             alt="Figma">
                         <div class="product__number">3</div>
                     </div>
@@ -625,7 +625,7 @@
                 <input class="share__input" type="text" name="site" value="https://ui8.net/feel-travel">
                 <button class="share__copy">Copy</button>
             </div>
-            <div class="share__preview"><img src="{{url('public/assetsimg/content/photo-1.jpg') }}" alt="Share">
+            <div class="share__preview"><img src="{{asset('assets/img/content/photo-1.jpg') }}" alt="Share">
             </div>
             <div class="share__btns"><a class="button-stroke share__button" href="https://www.facebook.com/ui8.net/"
                     target="_blank">
@@ -765,7 +765,7 @@
                         </div>
                         <div class="comments__list">
                             <div class="comments__item">
-                                <div class="comments__avatar"><img src="img/content/avatar-1.jpg" alt="Avatar">
+                                <div class="comments__avatar"><img src="{{asset('assets/img/content/avatar-1.jpg')}}" alt="Avatar">
                                 </div>
                                 <div class="comments__details">
                                     <div class="comments__line">
@@ -797,7 +797,7 @@
                                         </button>
                                     </div>
                                     <div class="answer">
-                                        <div class="answer__avatar"><img src="img/content/avatar.jpg"
+                                        <div class="answer__avatar"><img src="{{asset('assets/img/content/avatar.jpg')}}"
                                                 alt="Avatar" /></div>
                                         <div class="answer__details">
                                             <div class="answer__message">
@@ -816,7 +816,7 @@
                                 </div>
                             </div>
                             <div class="comments__answer">
-                                <div class="comments__avatar"><img src="img/content/avatar.jpg" alt="Avatar"></div>
+                                <div class="comments__avatar"><img src="{{asset('assets/img/content/avatar.jpg')}}" alt="Avatar"></div>
                                 <div class="comments__details">
                                     <div class="comments__line">
                                         <div class="comments__author">Chelsie Haley</div>
@@ -845,7 +845,7 @@
                                         </button>
                                     </div>
                                     <div class="answer">
-                                        <div class="answer__avatar"><img src="img/content/avatar.jpg"
+                                        <div class="answer__avatar"><img src="{{asset('assets/img/content/avatar.jpg')}}"
                                                 alt="Avatar" /></div>
                                         <div class="answer__details">
                                             <div class="answer__message">
@@ -864,7 +864,7 @@
                                 </div>
                             </div>
                             <div class="comments__item">
-                                <div class="comments__avatar"><img src="img/content/avatar-2.jpg" alt="Avatar">
+                                <div class="comments__avatar"><img src="{{asset('assets/img/content/avatar-2.jpg')}}" alt="Avatar">
                                 </div>
                                 <div class="comments__details">
                                     <div class="comments__line">
@@ -894,7 +894,7 @@
                                         </button>
                                     </div>
                                     <div class="answer">
-                                        <div class="answer__avatar"><img src="img/content/avatar.jpg"
+                                        <div class="answer__avatar"><img src="{{asset('assets/img/content/avatar.jpg')}}"
                                                 alt="Avatar" /></div>
                                         <div class="answer__details">
                                             <div class="answer__message">
@@ -913,7 +913,7 @@
                                 </div>
                             </div>
                             <div class="comments__item">
-                                <div class="comments__avatar"><img src="img/content/avatar-4.jpg" alt="Avatar">
+                                <div class="comments__avatar"><img src="{{asset('assets/img/content/avatar-4.jpg')}}" alt="Avatar">
                                 </div>
                                 <div class="comments__details">
                                     <div class="comments__line">
@@ -945,7 +945,7 @@
                                         </button>
                                     </div>
                                     <div class="answer">
-                                        <div class="answer__avatar"><img src="img/content/avatar.jpg"
+                                        <div class="answer__avatar"><img src="{{asset('assets/img/content/avatar.jpg')}}"
                                                 alt="Avatar" /></div>
                                         <div class="answer__details">
                                             <div class="answer__message">
@@ -964,7 +964,7 @@
                                 </div>
                             </div>
                             <div class="comments__item">
-                                <div class="comments__avatar"><img src="img/content/avatar-3.jpg" alt="Avatar">
+                                <div class="comments__avatar"><img src="{{asset('assets/img/content/avatar-3.jpg')}}" alt="Avatar">
                                 </div>
                                 <div class="comments__details">
                                     <div class="comments__line">
@@ -996,7 +996,7 @@
                                         </button>
                                     </div>
                                     <div class="answer">
-                                        <div class="answer__avatar"><img src="img/content/avatar.jpg"
+                                        <div class="answer__avatar"><img src="{{asset('assets/img/content/avatar.jpg')}}"
                                                 alt="Avatar" /></div>
                                         <div class="answer__details">
                                             <div class="answer__message">
@@ -1022,6 +1022,12 @@
     </div>
 </div>
 </div>
+{{-- profile project details --}}
+@yield('profile-footer')
+
+{{-- launched project html --}}
+@yield('project-detail')
+
 <!-- scripts-->
 <script src="{{asset('assets/js/lib/jquery.min.js') }}"></script>
 <script src="{{asset('assets/js/lib/slick.min.js') }}"></script>
@@ -1035,7 +1041,7 @@
 <script src="{{asset('assets/js/lib/jquery.daterangepicker.min.js') }}"></script>
 <script src="{{asset('assets/js/lib/nouislider.min.js') }}"></script>
 <script src="{{asset('assets/js/lib/wNumb.js') }}"></script>
-<script src="{{url('assets/js/charts.js') }}"></script>
+<script src="{{asset('assets/js/charts.js') }}"></script>
 <script src="{{asset('assets/js/demo.js') }}"></script>
 <script src="{{asset('assets/js/app.js') }}"></script>
 <!-- svg sprite-->

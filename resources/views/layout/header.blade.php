@@ -1,4 +1,4 @@
-<header class="header unauthorized" data-id="#header">
+<header class="header {{Auth::User() ? '' : 'unauthorized'}}" data-id="#header">
     <button class="header__burger"></button>
     <div class="search">
         <div class="search__head">
@@ -100,7 +100,7 @@
             <use xlink:href="#icon-search"></use>
         </svg>
     </button>
-    <div class="header__control"><a class="button header__button" href="/products-add.html">
+    <div class="header__control"><a class="button header__button" href="{{route('add_product')}}">
             <svg class="icon icon-add">
                 <use xlink:href="#icon-add"></use>
             </svg><span>Create</span></a>
@@ -133,7 +133,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="header__list"><a class="header__message new" href="message-center.html">
+                <div class="header__list"><a class="header__message new" href="{{route('message_center')}}">
                         <div class="header__avatar"><img src="{{ asset('assets/img/content/avatar-1.jpg') }}"
                                 alt="Avatar"></div>
                         <div class="header__details">
@@ -143,7 +143,7 @@
                             </div>
                             <div class="header__content">When do you release the coded template</div>
                         </div>
-                    </a><a class="header__message online" href="message-center.html">
+                    </a><a class="header__message online" href="{{route('message_center')}}">
                         <div class="header__avatar"><img src="{{ asset('assets/img/content/avatar-2.jpg') }}"
                                 alt="Avatar"></div>
                         <div class="header__details">
@@ -153,7 +153,7 @@
                             </div>
                             <div class="header__content">When do you release the coded template</div>
                         </div>
-                    </a><a class="header__message new" href="message-center.html">
+                    </a><a class="header__message new" href="{{route('message_center')}}">
                         <div class="header__avatar"><img src="{{ asset('assets/img/content/avatar-3.jpg') }}"
                                 alt="Avatar"></div>
                         <div class="header__details">
@@ -163,7 +163,7 @@
                             </div>
                             <div class="header__content">When do you release the coded template</div>
                         </div>
-                    </a><a class="header__message" href="message-center.html">
+                    </a><a class="header__message" href="{{route('message_center')}}">
                         <div class="header__avatar"><img src="{{ asset('assets/img/content/avatar-4.jpg') }}"
                                 alt="Avatar"></div>
                         <div class="header__details">
@@ -173,7 +173,7 @@
                             </div>
                             <div class="header__content">When do you release the coded template</div>
                         </div>
-                    </a><a class="header__message" href="message-center.html">
+                    </a><a class="header__message" href="{{route('message_center')}}">
                         <div class="header__avatar"><img src="{{ asset('assets/img/content/avatar-5.jpg') }}"
                                 alt="Avatar"></div>
                         <div class="header__details">
@@ -184,7 +184,7 @@
                             <div class="header__content">When do you release the coded template</div>
                         </div>
                     </a>
-                </div><a class="button header__button" href="message-center.html">View in message center</a>
+                </div><a class="button header__button" href="{{route('message_center')}}">View in message center</a>
             </div>
         </div>
         <div class="header__item header__item_notifications">
@@ -216,7 +216,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="header__list"><a class="header__notification new" href="notification.html">
+                <div class="header__list"><a class="header__notification new" href="{{route('notification')}}">
                         <div class="header__avatar"><img src="{{ asset('assets/img/content/avatar-1.jpg') }}"
                                 alt="Avatar">
                             <div class="header__icon" style="background-color: #2A85FF;"><img
@@ -230,7 +230,7 @@
                             </div>
                             <div class="header__content">Comment on <strong>Smiles – 3D icons</strong></div>
                         </div>
-                    </a><a class="header__notification new" href="notification.html">
+                    </a><a class="header__notification new" href="{{route('notification')}}">
                         <div class="header__avatar"><img src="{{ asset('assets/img/content/avatar-2.jpg') }}"
                                 alt="Avatar">
                             <div class="header__icon" style="background-color: #FF6A55;"><img
@@ -244,7 +244,7 @@
                             </div>
                             <div class="header__content">Likes <strong>Smiles – 3D icons</strong></div>
                         </div>
-                    </a><a class="header__notification new" href="notification.html">
+                    </a><a class="header__notification new" href="{{route('notification')}}">
                         <div class="header__avatar"><img src="{{ asset('assets/img/content/avatar-3.jpg') }}"
                                 alt="Avatar">
                             <div class="header__icon" style="background-color: #83BF6E;"><img
@@ -258,7 +258,7 @@
                             </div>
                             <div class="header__content">Purchased <strong>Smiles – 3D icons</strong></div>
                         </div>
-                    </a><a class="header__notification" href="notification.html">
+                    </a><a class="header__notification" href="{{route('notification')}}">
                         <div class="header__avatar"><img src="{{ asset('assets/img/content/avatar-4.jpg') }}"
                                 alt="Avatar">
                             <div class="header__icon" style="background-color: #8E59FF;"><img
@@ -275,7 +275,7 @@
                                 <strong>5</strong> for <strong>Smiles – 3D icons</strong>
                             </div>
                         </div>
-                    </a><a class="header__notification" href="notification.html">
+                    </a><a class="header__notification" href="{{route('notification')}}">
                         <div class="header__avatar"><img src="{{ asset('assets/img/content/avatar-5.jpg') }}"
                                 alt="Avatar">
                             <div class="header__icon" style="background-color: #2A85FF;"><img
@@ -289,7 +289,7 @@
                             </div>
                             <div class="header__content">Comment on <strong>Smiles – 3D icons</strong></div>
                         </div>
-                    </a></div><a class="button header__button" href="notification.html">See all
+                    </a></div><a class="button header__button" href="{{route('notification')}}">See all
                     notifications</a>
             </div>
         </div>
@@ -297,19 +297,27 @@
             <button class="header__head"><img src="{{ asset('assets/img/content/avatar.jpg') }}"
                     alt="Avatar"></button>
             <div class="header__body">
-                <a class="header__link active" href="shop.html">Profile</a><a
+                <a class="header__link active" href="{{route('profile')}}">Profile</a><a
                     style="margin-bottom: 12px;padding-bottom: 12px;border-bottom: 1px solid #EFEFEF;border-radius: 0;margin-top: 12px;"
-                    class="header__link" href="settings.html">Edit profile</a>
-                <div class="header__nav"><a class="header__link" href="customers-overview.html">
+                    class="header__link" href="{{route('edit_profile')}}">Edit profile</a>
+                <div class="header__nav"><a class="header__link" href="{{route('overview')}}">
                         <svg class="icon icon-bar-chart">
                             <use xlink:href="#icon-bar-chart"></use>
-                        </svg>Analytics</a><a class="header__link" href="affiliate-center.html">
+                        </svg>Analytics</a><a class="header__link" href="{{route('affiliate_center')}}">
                         <svg class="icon icon-ticket">
                             <use xlink:href="#icon-ticket"></use>
-                        </svg>Affiliate center</a><a class="header__link" href="explore-creators.html">
+                        </svg>Affiliate center</a>
+                        <a class="header__link" href="{{route('explore_creators')}}">
                         <svg class="icon icon-grid">
                             <use xlink:href="#icon-grid"></use>
-                        </svg>Explore creators</a></div>
+                        </svg>Explore creators
+                        </a>
+                        <a class="header__link" href="#" style="display: none">
+                            <svg class="icon icon-grid">
+                                <use xlink:href="#icon-grid"></use>
+                            </svg>Explore creators
+                        </a>
+                    </div>
                 <div style="border-radius: 0px; cursor: unset;" onmouseover="this.style.cursor='pointer'"
                     onmouseout="this.style.cursor='unset'" class="header__nav header__link color"
                     data-popup=".js-popup-claim">

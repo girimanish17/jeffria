@@ -16,6 +16,33 @@ class LoginController extends Controller
         return view(self::BASE_PATH_AUTH .'login');
     }
 
+    function user_login(Request $request)
+    {
+        
+        $this->validate($request, [
+            'email'   => 'required|email',
+            'password'  => 'required'
+        ],[
+            'email.required' => __('Email Required.'),
+            'email.email' => __('Invalid Email Format.'),
+            'password.required' => __('Password Required.'),
+        ]);
+
+        $user_data = array(
+            'email'  => $request->get('email'),
+            'password' => $request->get('password')
+        );
+
+        if(Auth::attempt($user_data))
+        {
+          return redirect()->intended('/')->withSuccess('You have Successfully Login');
+        }
+        else
+        {
+          return back()->withErrors('Wrong Login Details');
+        }
+    }
+
     public function register(){
         return view(self::BASE_PATH_AUTH .'register');
     }
