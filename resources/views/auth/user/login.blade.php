@@ -58,6 +58,7 @@
 </head>
 
 <body>
+
 <div class="page page_simple">
     <div class="entry">
       <div class="entry__wrapper"><a class="entry__logo" href="{{url('/')}}"><img class="some-icon" src="{{asset('assets/img/logo-dark.png')}}" alt="Core"><img class="some-icon-dark" src="{{asset('asset/img/logo-light.png')}}" alt="Core"></a>
@@ -70,28 +71,42 @@
           </div>
         </div>
         <div class="entry__text">Or continue with email address</div>
-        <div class="entry__fieldset">
-          <div class="field field_icon">
-            <div class="field__wrap">
-              <input class="field__input" type="emial" name="email" placeholder="Your email">
-              <div class="field__icon">
-                <svg class="icon icon-mail">
-                  <use xlink:href="#icon-mail"></use>
-                </svg>
-              </div>
+        @if ($errors->any())
+            <div style="color: #f57272">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
             </div>
-          </div>
-          <div class="field field_icon">
-            <div class="field__wrap">
-              <input class="field__input" type="password" name="password" placeholder="Password">
-              <div class="field__icon">
-                <svg class="icon icon-lock">
-                  <use xlink:href="#icon-lock"></use>
-                </svg>
-              </div>
+        @endif
+        <form action="{{ route('user_login')}}" method="POST">
+        @csrf
+            <div class="entry__fieldset">
+            <div class="field field_icon">
+                <div class="field__wrap">
+                <input class="field__input" type="emial" name="email" placeholder="Your email">
+                <div class="field__icon">
+                    <svg class="icon icon-mail">
+                    <use xlink:href="#icon-mail"></use>
+                    </svg>
+                </div>
+                </div>
             </div>
-          </div><a class="button entry__button" href="index.html#header">Sign in</a>
-        </div>
+            <div class="field field_icon">
+                <div class="field__wrap">
+                <input class="field__input" type="password" name="password" placeholder="Password">
+                <div class="field__icon">
+                    <svg class="icon icon-lock">
+                    <use xlink:href="#icon-lock"></use>
+                    </svg>
+                </div>
+                </div>
+            </div>
+              {{-- <a class="button entry__button" href="index.html#header">Sign in</a> --}}
+              <input type="submit" class="button entry__button" value="Sign in">
+            </div>
+        </form>
         <div class="entry__note">This site is protected by reCAPTCHA and the Google Privacy Policy.</div>
         <div class="entry__info">Don’t have an account? <a href="{{route('sign_up')}}">Sign up</a></div>
       </div>

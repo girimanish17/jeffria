@@ -5,6 +5,8 @@ use App\Http\Controllers\HomeDashboardController;
 
 Route::get('/sign-in', [LoginController::class, 'login'])->name('sign_in');
 
+Route::post('/user-login', [LoginController::class, 'user_login'])->name('user_login');
+
 Route::get('/sign-up', [LoginController::class, 'register'])->name('sign_up');
 
 Route::post('/registration', [LoginController::class, 'registration'])->name('registration');
@@ -13,6 +15,13 @@ Route::get('/email_validation', [LoginController::class, 'email_validation'])->n
 
 Route::get('/OTP-code', [LoginController::class, 'OTP_code'])->name('OTP_code');
 
+Route::get('profile/profile', [HomeDashboardController::class, 'profile'])->name('profile');
+
+Route::get('affiliate-center', [HomeDashboardController::class, 'affiliate_center'])->name('affiliate_center');
+
+Route::get('explore-creators', [HomeDashboardController::class, 'explore_creators'])->name('explore_creators');
+
+Route::get('profile/edit-profile', [HomeDashboardController::class, 'edit_profile'])->name('edit_profile');
 
 Route::get('/', [HomeDashboardController::class, 'index'])->name('dashboard');
 
@@ -35,6 +44,8 @@ Route::get('staffs/affiliate-traffic', [HomeDashboardController::class, 'affilia
 Route::get('staffs/salary-claim-status', [HomeDashboardController::class, 'salary_claim_status'])->name('salary_claim_status');
 
 Route::get('message-center', [HomeDashboardController::class, 'message_center'])->name('message_center');
+
+Route::get('notifications', [HomeDashboardController::class, 'notification'])->name('notification');
 
 // Expenses
 Route::get('expenses/overview', [HomeDashboardController::class, 'expenses_overview'])->name('expenses_overview');

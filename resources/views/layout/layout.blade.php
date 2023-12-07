@@ -53,6 +53,25 @@
         .overview__icon i {
             font-size: 22px;
         }
+
+        .myselect{
+        width: 100%;
+        height: 48px;
+        padding: 0 10px;
+        border-radius: 12px;
+        border: 2px solid transparent;
+        background: #FFFF !important;
+        box-shadow: inset 0 0 0 2px #EFEFEF;
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 1.6;
+        color: #1A1D1F;
+        transition: all .2s;
+      }
+      .richText .richText{
+        display: none;
+      }
     </style>
 </head>
 

@@ -14,6 +14,31 @@ class HomeDashboardController extends Controller
         ]);
     }
 
+    // Profile
+    public function profile(){
+        return view(self::BASE_PATH .'profile.profile')->with([
+            'page_title' => "JeffRia - Profile",
+        ]);
+    }
+
+    public function edit_profile(){
+        return view(self::BASE_PATH .'profile.edit-profile')->with([
+            'page_title' => "JeffRia - Edit Profile",
+        ]);
+    }
+
+    public function affiliate_center(){
+        return view(self::BASE_PATH .'profile.affiliate-center')->with([
+            'page_title' => "JeffRia - Affiliate Center",
+        ]);
+    }
+
+    public function explore_creators(){
+        return view(self::BASE_PATH .'profile.explore-creators')->with([
+            'page_title' => "JeffRia - Explore Creators",
+        ]);
+    }
+
     // Projects
     public function add_product() {
         return view(self::BASE_PATH .'projects.add-product')->with([
@@ -58,6 +83,7 @@ class HomeDashboardController extends Controller
             'page_title' => "JeffRia - Staffs | Affiliate Traffic",
         ]);
     }
+
     public function salary_claim_status() {
         return view(self::BASE_PATH .'staffs.salary-claim-status')->with([
             'page_title' => "JeffRia - Staffs | Salary Claim Status",
@@ -67,6 +93,12 @@ class HomeDashboardController extends Controller
     public function message_center() {
         return view(self::BASE_PATH .'staffs.message-center')->with([
             'page_title' => "JeffRia - Message Center",
+        ]);
+    }
+
+    public function notification() {
+        return view('notification')->with([
+            'page_title' => "JeffRia - Notifications",
         ]);
     }
 

@@ -1,3 +1,44 @@
+.status .theme__input:checked+.theme__inner {
+  background: rgb(100, 165, 1) !important;
+}
+
+.team_input {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  grid-gap: 20px;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 500px) {
+  .team_input {
+    flex-direction: column;
+    grid-gap: 0;
+    align-items: unset;
+  }
+}
+
+.ga_report_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 20px;
+  margin-bottom: 25px;
+}
+
+.ga_report_grid .field__label {
+  margin-bottom: 5px;
+}
+
+.card__head .create__line {
+  border-bottom: unset !important;
+  margin-bottom: unset !important;
+  padding-bottom: unset !important;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
 label.theme.js-theme {
     display: none;
 }
